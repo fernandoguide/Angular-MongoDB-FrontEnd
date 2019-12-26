@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = ' Spring Boot + Angular 8 + MongoDB CRUD ';
+  title = 'CRUD usando Spring-Boot + Angular 8 + MongoDB';
 }
