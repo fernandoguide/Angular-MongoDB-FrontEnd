@@ -2,19 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../service/employee.service';
 import { Employee } from '../model/employee.model';
 import { Observable } from 'rxjs';
-import { EmployeeDetailsComponent } from '../employee-details/employee-details.component';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: "app-employee-list",
-  templateUrl: "./employee-list.component.html",
-  styleUrls: ["./employee-list.component.css"]
+  selector: 'app-employee-list',
+  templateUrl: './employee-list.component.html',
+  styleUrls: ['./employee-list.component.css']
 })
 export class EmployeeListComponent implements OnInit {
   employees: Observable<Employee[]>;
 
-  constructor(private employeeService: EmployeeService,
-    private router: Router) { }
+  constructor(
+    private employeeService: EmployeeService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.reloadData();
