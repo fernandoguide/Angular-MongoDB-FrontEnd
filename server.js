@@ -3,10 +3,10 @@ const express = require("express");
 const path = require("path");
 const app = express();
 // Serve os arquivos estáticos da pasta dist (gerada pelo ng build)
-app.use(express.static(__dirname + "/dist/angular-frontend"));
+app.use(express.static(__dirname + "/dist/angular-frontEnd"));
 
 app.get("*", function(req, res) {
-  const index = path.join(__dirname, "dist/angular-frontend", "index.html");
+  const index = path.join(__dirname, "dist/angular-frontEnd", "index.html");
   res.sendFile(index);
 });
 // app.get("/*", function(req, res) {
