@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:8080/api/v1/employees'
+  baseUrl: 'https://spring-mongodb-backend.herokuapp.com/api/v1/employees',
+  baseUrlProd: 'https://spring-mongodb-backend.herokuapp.com/api/v1/employees'
 };
 
 /*
