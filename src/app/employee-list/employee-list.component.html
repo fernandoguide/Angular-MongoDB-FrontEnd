@@ -25,6 +25,13 @@
               Excluir
             </button>
             <button
+              (click)="employeeUpdate(employee.id)"
+              class="btn btn-warning"
+              style="margin-left: 10px"
+            >
+              Alterar
+            </button>
+            <button
               (click)="employeeDetails(employee.id)"
               class="btn btn-info"
               style="margin-left: 10px"

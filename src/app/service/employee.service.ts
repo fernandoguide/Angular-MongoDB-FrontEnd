@@ -19,8 +19,8 @@ export class EmployeeService {
   createEmployee(employee: Object): Observable<Object> {
     return this.http.post(`${environment.baseUrl}`, employee);
   }
-  updateEmployee(id: number, value: any): Observable<Object> {
-    return this.http.put(`${environment.baseUrl}/${id}`, value);
+  updateEmployee(id: number, employee: Object): Observable<Object> {
+    return this.http.put(`${environment.baseUrl}/${id}`, employee);
   }
   deleteEmployee(id: number): Observable<any> {
     return this.http.delete(`${environment.baseUrl}/${id}`, { responseType: 'text' });
