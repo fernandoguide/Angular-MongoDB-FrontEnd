@@ -16,10 +16,10 @@ export class EmployeeService {
   getEmployee(id: number): Observable<any> {
     return this.http.get(`${environment.baseUrl}/${id}`);
   }
-  createEmployee(employee: any): Observable<Object> {
+  createEmployee(employee: any): Observable<Any> {
     return this.http.post(`${environment.baseUrl}`, employee);
   }
-  updateEmployee(id: number, employee: any): Observable<Object> {
+  updateEmployee(id: number, employee: any): Observable<Any> {
     return this.http.put(`${environment.baseUrl}/${id}`, employee);
   }
   deleteEmployee(id: number): Observable<any> {
